@@ -38,10 +38,22 @@ class _TestScreenLayoutState extends State<TestScreenLayout> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('Sanya Data', style: TextStyle(fontSize: 40),),
-            Text('${sanyaFromJson.name}', style: TextStyle(fontSize: 40),),
-            const Text('Gera Data', style: TextStyle(fontSize: 40),),
-            Text('${geraFromJson.name}', style: TextStyle(fontSize: 40),),
+            const Text(
+              'Sanya Data',
+              style: TextStyle(fontSize: 40, color: Colors.grey),
+            ),
+            Text(
+              '${sanyaFromJson.name}',
+              style: TextStyle(fontSize: 38),
+            ),
+            const Text(
+              'Gera Data',
+              style: TextStyle(fontSize: 40, color: Colors.green),
+            ),
+            Text(
+              '${geraFromJson.name}',
+              style: TextStyle(fontSize: 38),
+            ),
           ],
         ),
       ),
