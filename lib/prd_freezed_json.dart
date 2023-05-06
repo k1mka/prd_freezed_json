@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prd_freezed_json/data/models/first_user_model.dart';
 import 'package:prd_freezed_json/data/models/second_user_model.dart';
-import 'package:prd_freezed_json/test_screen/test_screen_layout.dart';
+import 'package:prd_freezed_json/test_screen/test_screen.dart';
 
 class PrdJson extends StatelessWidget {
   const PrdJson({Key? key}) : super(key: key);
@@ -10,8 +10,8 @@ class PrdJson extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TestScreenLayout(
-        sanyaData: FirstUserModel(
+      home: TestScreen(
+        dateFromBackS: FirstUserModel(
           country: 'Ukraine',
           city: 'Kharkiv',
           apples: ['s', 't', 'lazy'],
@@ -20,7 +20,7 @@ class PrdJson extends StatelessWidget {
           name: 'Aleksandr',
           age: 22,
         ),
-        geraData: SecondUserModel(
+        dateFromBackG: SecondUserModel(
           name: 'George',
             email: 'gera@gmail.com', password: 'Gera12345', age: 21),
       ),

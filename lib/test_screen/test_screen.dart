@@ -7,14 +7,14 @@ class TestScreen extends StatelessWidget {
   const TestScreen({
     Key? key,
     required this.dateFromBackS,
-    required this.secondUserModel,
+    required this.dateFromBackG,
   }) : super(key: key);
 
   final FirstUserModel dateFromBackS;
-  final SecondUserModel secondUserModel;
+  final SecondUserModel dateFromBackG;
 
   @override
   Widget build(BuildContext context) {
-    return TestScreenLayout(sanyaData: dateFromBackS, geraData: secondUserModel);
+    return TestScreenLayout(sanyaData: dateFromBackS, geraData: dateFromBackG);
   }
 }
